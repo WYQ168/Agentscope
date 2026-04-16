@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: flow-assistant
+
+logging:
+  level:
+    root: INFO
+    com.company.flowassistant: DEBUG
+
+agentscope:
+  core:
+    model:
+      dashscope:
+        api-key: ${DASHSCOPE_API_KEY}
+        model-name: qwen-plus
+  agent:
+    max-steps: 10
+
+sandbox:
+  enabled: true
